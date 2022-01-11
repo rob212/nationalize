@@ -1,10 +1,18 @@
 import React from 'react'
 import './CountryCard.css'
+import { getName } from 'country-list'
 
-function CountryCard({ name, probability }) {
+const CountryCard = ({ name, probability }) => {
+  const countryName = getName(name)
   return (
     <div className='countryCard'>
-      <h3 className='countryName'>{name}</h3>
+      <h3 className='countryName'>{countryName ? countryName : 'Unknown'}</h3>
+      {countryName && (
+        <img
+          src={`https://countryflagsapi.com/png/${name}`}
+          alt={`image of the national flag of ${name}`}
+        />
+      )}
       <p className='percentage'>{Math.ceil(probability * 100)}%</p>
     </div>
   )

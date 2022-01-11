@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.countryName {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .percentage {
   font-size: 3.5rem;
 }
