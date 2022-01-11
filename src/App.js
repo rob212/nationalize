@@ -1,13 +1,15 @@
 import './App.css'
+import { useState } from 'react'
 import CountryCard from './components/countryCard/CountryCard'
 import Header from './components/header/Header'
+import getNationality from './utils/NationalizeApi'
 
 function App() {
-  // https://api.nationalize.io/?name=michael
-  // https://nationalize.io/
+  const [searchResult, setSearchResult] = useState({})
 
-  const searchHandler = name => {
-    console.log(name)
+  const searchHandler = async name => {
+    const data = await getNationality(name)
+    console.log(data)
   }
 
   return (
