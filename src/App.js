@@ -5,14 +5,14 @@ import getNationality from './utils/NationalizeApi'
 import ResultsPanel from './components/resultsPanel/ResultsPanel'
 
 function App() {
-  const [searchResult, setSearchResult] = useState({ name: '', countries: [] })
+  const [searchResult, setSearchResult] = useState({ name: '', country: [] })
 
   const searchHandler = async name => {
     const data = await getNationality(name)
     console.log(data)
     setSearchResult(data)
   }
-  // console.log(searchResult)
+
   return (
     <div className='app'>
       <Header handleSearch={searchHandler} />
