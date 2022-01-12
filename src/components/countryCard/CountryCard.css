@@ -22,5 +22,6 @@
 }
 
 .flagImage {
-  height: 200px;
+  height: 150px;
+  padding: 0px 10px;
 }
