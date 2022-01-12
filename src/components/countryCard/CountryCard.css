@@ -1,10 +1,16 @@
 .countryCard {
   margin: 20px;
-  background: linear-gradient(to top, #5ff1b4, #42f3db);
+  /* https://cssgradient.io/ */
+  background: radial-gradient(
+    circle,
+    rgba(69, 162, 158, 1) 47%,
+    rgba(102, 252, 241, 1) 95%
+  );
   height: 400px;
   width: 400px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  color: #fff;
 
   display: flex;
   flex-flow: column;
