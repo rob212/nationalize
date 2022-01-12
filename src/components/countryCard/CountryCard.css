@@ -1,6 +1,6 @@
 .countryCard {
   margin: 20px;
-  background-color: rgb(129, 204, 154);
+  background: linear-gradient(to top, #5ff1b4, #42f3db);
   height: 400px;
   width: 400px;
   border-radius: 20px;
@@ -19,4 +19,8 @@
 
 .percentage {
   font-size: 3.5rem;
+}
+
+.flagImage {
+  height: 200px;
 }

@@ -9,6 +9,7 @@ const CountryCard = ({ name, probability }) => {
       <h3 className='countryName'>{countryName ? countryName : 'Unknown'}</h3>
       {countryName && (
         <img
+          className='flagImage'
           src={`https://countryflagsapi.com/png/${name}`}
           alt={`image of the national flag of ${name}`}
         />

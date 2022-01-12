@@ -1,6 +1,7 @@
 header {
   height: 100px;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -31,6 +32,7 @@ header > div {
   display: flex;
   border-radius: 50px;
   flex: 1;
+  min-width: 200px;
 }
 
 .searchPanel > .logoIcon {
