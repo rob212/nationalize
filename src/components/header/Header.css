@@ -6,6 +6,10 @@ header {
   justify-content: space-between;
 }
 
+h1 {
+  font-family: 'Leckerli One', cursive;
+}
+
 header > div {
   margin: 10px;
 }
@@ -32,7 +36,7 @@ header > div {
   display: flex;
   border-radius: 50px;
   flex: 1;
-  min-width: 200px;
+  min-width: 150px;
 }
 
 .searchPanel > .logoIcon {

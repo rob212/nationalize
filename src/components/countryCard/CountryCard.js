@@ -11,7 +11,7 @@ const CountryCard = ({ name, probability }) => {
         <img
           className='flagImage'
           src={`https://countryflagsapi.com/png/${name}`}
-          alt={`image of the national flag of ${name}`}
+          alt={`national flag of ${name}`}
         />
       )}
       <p className='percentage'>{Math.ceil(probability * 100)}%</p>
